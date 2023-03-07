@@ -7,14 +7,14 @@ int main (void)
     int n = get_int("number");
     for(int i=0 ; i<7; i++)
     {
-        if(numbers==n)
+        if(numbers[i]==n)
         {
             printf("number found");
             return 0;
         }
-        else
-        {
-            printf("not found");
+
         }
+        printf("not found");
+        return 1;
     }
 }
